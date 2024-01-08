@@ -1,12 +1,20 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
+import { ProjectType } from '../project_type';
+import { ProjectService } from '../project.service';
 
 @Component({
-  selector: 'app-projects',
+  selector: 'projects',
   standalone: true,
-  imports: [],
+  imports: [CommonModule, RouterModule],
   templateUrl: './projects.component.html',
-  styleUrl: './projects.component.css'
+  styleUrl: './projects.component.scss',
 })
 export class ProjectsComponent {
-
+  myProjects: ProjectType[] = [];
+  ps: ProjectService = inject(ProjectService);
+  constructor() {
+    this.myProjects = this.ps.getAllProjects();
+  }
 }

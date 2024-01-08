@@ -1,0 +1,22 @@
+<section class="header">
+    <div class="container">
+        <div class="project-container">
+            <div *ngIf="projectExists" class="project-container">
+                <p class="title-text">{{project?.name}}</p>
+                <img class="project-img" [src]="project?.picture" [alt]="project?.name">
+                <div class="project-text">
+                    <h4 class="project-technologies">Skills: {{project?.lang}}</h4>
+                    <p>{{project?.longDescription}}</p>
+                </div>
+                <a [href]="project?.link" class="button" target="_blank">
+                    See source code
+                </a>
+            </div>
+
+
+            <div *ngIf="!projectExists">
+                <h1>The project or repository you are looking for does not exist.</h1>
+            </div>
+        </div>
+    </div>
+</section>

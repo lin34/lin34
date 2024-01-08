@@ -1,0 +1,16 @@
+<div className="d-flex justify-content-center">
+    <h1 class="section-heading">Work Experience</h1>
+    <div class="projects">
+        <div *ngFor="let job of myJobs" class="project">
+
+            <a routerLink="/experience/{{job.jobUrl}}">
+                <img class="project-img" [src]="job.picture" [alt]="job.jobName">
+                <div class="project-text">
+                    <h2 class="project-title">{{job.jobName}}</h2>
+                    <h2 class="project-name">{{job.company}}</h2>
+                    <h4 class="project-technologies">{{job.duration}}</h4>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
