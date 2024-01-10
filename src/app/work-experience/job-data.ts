@@ -30,7 +30,7 @@ export class JobData {
         'Improved unit and integration testing coverage by 41% using Jasmine',
         'Restructured major Angular components into separate Node.js packages promote cross-team collaboration, reducing build time from 18 mins to 2 mins',
       ],
-      picture: '../../assets/imgs/work_imgs/bofaml.png',
+      picture: '../../assets/imgs/work_imgs/bofa.png',
     },
     {
       jobId: '3',
@@ -46,7 +46,7 @@ export class JobData {
         'Performed database management programming with ADO.NET, Microsoft SQL Server Management Studio, stored procedures and queries',
         'Presented a COVID-19 Innovation Challenge case competition solution with a group of five as a part of the BMO internship program',
       ],
-      picture: '../../assets/imgs/work_imgs/bmo_logo.jpg',
+      picture: '../../assets/imgs/work_imgs/bmo.png',
     },
     {
       jobId: '2',
@@ -73,7 +73,7 @@ export class JobData {
         'Performed root cause analysison high precision stent cutting process',
         'Validated manufacturing line specs during Factory Acceptance Tests',
       ],
-      picture: '../../assets/imgs/work_imgs/ats_logo.jpg',
+      picture: '../../assets/imgs/work_imgs/ats.webp',
     },
     {
       jobId: '0',
@@ -86,7 +86,7 @@ export class JobData {
         'Led the development of a web app to flag profanity, reducing processing time from 3+ hours to 30 mins',
         'Streamlined onboarding for future workers by writing documentation describing setup process',
       ],
-      picture: '../../assets/imgs/work_imgs/waterloo.png',
+      picture: '../../assets/imgs/work_imgs/uw.png',
     },
   ];
   /**

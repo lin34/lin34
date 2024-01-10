@@ -6,7 +6,7 @@ import { ProjectType } from './project_type';
 export class ProjectService {
   public myProjects: ProjectType[] = [
     {
-      id: 'pathfindingvisualizer',
+      id: 7,
       name: 'Path Finding Visualizer',
       lang: 'Python, pygame',
       shortDescription:
@@ -16,7 +16,7 @@ export class ProjectService {
       picture: '../../assets/imgs/project_imgs/ex_astar.PNG',
     },
     {
-      id: 'bicepcurlcounter',
+      id: 6,
       name: 'Bicep Curl Counter',
       lang: 'Python, Mediapipe, OpenCV',
       shortDescription:
@@ -30,7 +30,7 @@ export class ProjectService {
       picture: '../../assets/imgs/project_imgs/bicep_curl_counter.PNG',
     },
     {
-      id: 'compiler',
+      id: 5,
       name: 'VHDL Compiler',
       lang: 'Java, TDD, ANT test runner',
       shortDescription: 'A compiler that parses strings into a subset of VHDL',
@@ -42,7 +42,7 @@ export class ProjectService {
       picture: '../../assets/imgs/project_imgs/compiler.PNG',
     },
     {
-      id: 'crypto_predictor',
+      id: 4,
       name: 'Ethereum Price Predictor',
       lang: 'Python, tensorflow, numpy, matplotlib',
       shortDescription:
@@ -69,7 +69,7 @@ export class ProjectService {
       picture: '../../assets/imgs/project_imgs/crypto_predictor.png',
     },
     {
-      id: 'wifismartthermostat',
+      id: 3,
       name: 'Wifi Smart Thermostat',
       lang: 'Python, Flask, REST API, Multi-threading, SolidWorks',
       shortDescription:
@@ -81,7 +81,7 @@ export class ProjectService {
       picture: '../../assets/imgs/project_imgs/wifi_therm_with_display.jpg',
     },
     {
-      id: 'pidcontroller',
+      id: 2,
       name: 'PID Controller',
       lang: 'MatLab, Control Theory',
       shortDescription: `Designed an accurate motion controller for a rack and pinion driven cart. 
@@ -92,7 +92,7 @@ export class ProjectService {
       picture: '../../assets/imgs/project_imgs/mte360_PID.PNG',
     },
     {
-      id: 'obstaclecourserobot',
+      id: 1,
       name: 'Obstacle Course Robot',
       lang: 'C',
       shortDescription:
@@ -107,7 +107,7 @@ export class ProjectService {
     return this.myProjects;
   }
 
-  getProjectById(id: string): ProjectType | undefined {
+  getProjectById(id: number): ProjectType | undefined {
     return this.myProjects.find((myProjects) => myProjects.id === id);
   }
 

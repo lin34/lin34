@@ -5,7 +5,7 @@ import { JobComponent } from './work-experience/job/job.component';
 
 const routeConfig: Routes = [
   {
-    path: 'home/',
+    path: '',
     component: HomeComponent,
     title: 'Home page',
   },

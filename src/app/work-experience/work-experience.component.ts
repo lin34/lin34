@@ -10,7 +10,7 @@ import { JobType } from './job-type';
   standalone: true,
   imports: [CommonModule, RouterModule],
   templateUrl: './work-experience.component.html',
-  styleUrl: './work-experience.component.css',
+  styleUrl: './work-experience.component.scss',
 })
 export class WorkExperienceComponent {
   jd: JobData = new JobData();

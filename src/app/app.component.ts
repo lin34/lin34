@@ -10,9 +10,9 @@ import { RouterLink, RouterOutlet } from '@angular/router';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  aboutUrl: string = '/home/#about';
-  projectsUrl: string = '/home/#projects';
-  workExperienceUrl: string = '/home/#workexperience';
+  aboutUrl: string = '/#about';
+  projectsUrl: string = '/#projects';
+  workExperienceUrl: string = '/#workexperience';
 
   title = 'portfolio';
 }

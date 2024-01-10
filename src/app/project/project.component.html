@@ -1,22 +1,27 @@
 <section class="header">
-    <div class="container">
-        <div class="project-container">
-            <div *ngIf="projectExists" class="project-container">
-                <p class="title-text">{{project?.name}}</p>
+    <div *ngIf="projectExists" class="container text-left">
+        <div class="infos">
+            <div class="row">
+                <h6 class="section-title mb-4">{{project?.name}}</h6>
+            </div>
+            <div class="row">
                 <img class="project-img" [src]="project?.picture" [alt]="project?.name">
-                <div class="project-text">
-                    <h4 class="project-technologies">Skills: {{project?.lang}}</h4>
-                    <p>{{project?.longDescription}}</p>
-                </div>
+            </div>
+            <div class="row">
+                <p><b>Skills: </b>{{project?.lang}}</p>
+                <p>{{project?.longDescription}}</p>
+            </div>
+            <div class="row">
                 <a [href]="project?.link" class="button" target="_blank">
-                    See source code
+                    <button class="btn btn-primary rounded mt-3">See source code</button>  
                 </a>
             </div>
-
-
-            <div *ngIf="!projectExists">
-                <h1>The project or repository you are looking for does not exist.</h1>
-            </div>
         </div>
+
+    </div>
+
+
+    <div *ngIf="!projectExists">
+        <h1>The project or repository you are looking for does not exist.</h1>
     </div>
 </section>

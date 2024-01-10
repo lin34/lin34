@@ -1,5 +1,5 @@
 export interface ProjectType {
-  id: string;
+  id: number;
   name: string;
   lang: string; //languages/skills used in project
   shortDescription: string;
