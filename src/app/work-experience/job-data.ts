@@ -12,8 +12,6 @@ export class JobData {
         'Developed and maintained high performance stress tests across AMD product lines including CPU, GPU and APU',
         'Led the design and validation of a critical test suite to prove reliability for MI300, a generative AI server chip',
         'Collaborated with cross-functional teams by providing technical support to investigate and debug crashes, errors, failures and performance issues for hardware stress tests, delivering under tight deadlines',
-        'Performed test time reduction and correlation studies on defective parts to improve the diag team’s ability to catch errors and improve validation speed by tuning parameters such as temperature, voltage and clock speeds',
-        'Enabled testing on a suite of hardware systems by flashing firmware, installing Linux, and setting up SSH',
         'Wrote and optimized a multithreaded C++ system memory integrity check tool to debug and accurately pinpoint kernel memory corruption failure discovered by an external team',
       ],
       picture: '../../assets/imgs/work_imgs/amd.png',
@@ -90,7 +88,8 @@ export class JobData {
     },
   ];
   /**
-   *
+   *        'Performed test time reduction and correlation studies on defective parts to improve the diag team’s ability to catch errors and improve validation speed by tuning parameters such as temperature, voltage and clock speeds',
+        'Enabled testing on a suite of hardware systems by flashing firmware, installing Linux, and setting up SSH',
    * @param id :url parameter to load the corresponding page
    * @returns
    */

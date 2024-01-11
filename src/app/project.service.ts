@@ -6,7 +6,7 @@ import { ProjectType } from './project_type';
 export class ProjectService {
   public myProjects: ProjectType[] = [
     {
-      id: 7,
+      id: 'pathfindingvisualizer',
       name: 'Path Finding Visualizer',
       lang: 'Python, pygame',
       shortDescription:
@@ -16,7 +16,7 @@ export class ProjectService {
       picture: '../../assets/imgs/project_imgs/ex_astar.PNG',
     },
     {
-      id: 6,
+      id: 'bicepcurlcounter',
       name: 'Bicep Curl Counter',
       lang: 'Python, Mediapipe, OpenCV',
       shortDescription:
@@ -30,7 +30,7 @@ export class ProjectService {
       picture: '../../assets/imgs/project_imgs/bicep_curl_counter.PNG',
     },
     {
-      id: 5,
+      id: 'compiler',
       name: 'VHDL Compiler',
       lang: 'Java, TDD, ANT test runner',
       shortDescription: 'A compiler that parses strings into a subset of VHDL',
@@ -42,7 +42,7 @@ export class ProjectService {
       picture: '../../assets/imgs/project_imgs/compiler.PNG',
     },
     {
-      id: 4,
+      id: 'crypto_predictor',
       name: 'Ethereum Price Predictor',
       lang: 'Python, tensorflow, numpy, matplotlib',
       shortDescription:
@@ -57,19 +57,14 @@ export class ProjectService {
           datetime
           tensorflow.
           The data to be fed into a Recurrent Neural Network (RNN) is prepared using numpy to format it into arrays.
-          The data used to train (x_train) includes the closing price for the previous 60 days. The correct value 
-          that it trains the model against is the 60th day. The complete data set consists of the data from the Jan 1, 2016
-          to the present day that the program is run. The training set is the first 80% of days, while 
-          the test set is the latter 20% up to the present day. The RNN uses a LSTM (Long Short Term Memory) data
-          input and must be specially formatted into a 3 dimensional data format detailing the number of rows (data set entries), 
-          the time step (columns in this case the past 60 days), and the feature, which in this case is 1, since we are
-          only using the close market price. The model has 2 LSTM layers and 2 densely connected layers.
+          The data used to train (x_train) includes the closing price for the previous 60 days.
+          The model has 2 LSTM layers and 2 densely connected layers.
           The graph shows the predicted price (yellow) compared to the real price(red). `,
       link: 'https://github.com/lin34/cryptoPredictor',
       picture: '../../assets/imgs/project_imgs/crypto_predictor.png',
     },
     {
-      id: 3,
+      id: 'wifismartthermostat',
       name: 'Wifi Smart Thermostat',
       lang: 'Python, Flask, REST API, Multi-threading, SolidWorks',
       shortDescription:
@@ -81,7 +76,7 @@ export class ProjectService {
       picture: '../../assets/imgs/project_imgs/wifi_therm_with_display.jpg',
     },
     {
-      id: 2,
+      id: 'pidcontroller',
       name: 'PID Controller',
       lang: 'MatLab, Control Theory',
       shortDescription: `Designed an accurate motion controller for a rack and pinion driven cart. 
@@ -92,7 +87,7 @@ export class ProjectService {
       picture: '../../assets/imgs/project_imgs/mte360_PID.PNG',
     },
     {
-      id: 1,
+      id: 'obstaclecourserobot',
       name: 'Obstacle Course Robot',
       lang: 'C',
       shortDescription:
@@ -107,7 +102,7 @@ export class ProjectService {
     return this.myProjects;
   }
 
-  getProjectById(id: number): ProjectType | undefined {
+  getProjectById(id: string): ProjectType | undefined {
     return this.myProjects.find((myProjects) => myProjects.id === id);
   }
 
@@ -119,5 +114,14 @@ export class ProjectService {
   //   }
   //   return null;
   // }
+  /*
+  The correct value 
+          that it trains the model against is the 60th day. The complete data set consists of the data from the Jan 1, 2016
+          to the present day that the program is run. The training set is the first 80% of days, while 
+          the test set is the latter 20% up to the present day. The RNN uses a LSTM (Long Short Term Memory) data
+          input and must be specially formatted into a 3 dimensional data format detailing the number of rows (data set entries), 
+          the time step (columns in this case the past 60 days), and the feature, which in this case is 1, since we are
+          only using the close market price.
+  */
   constructor() {}
 }

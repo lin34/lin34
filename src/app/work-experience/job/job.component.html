@@ -1,19 +1,23 @@
-<section class="section" id="_job">
-    <div *ngIf="jobExists" class="job-container">
-        <p class="title-text">{{job.name}}</p>
-        <img class="job-img" [src]="job.picture" [alt]="job.name">
-        <div class="job-text">
-            <h2 class="job-name">{{job.jobName}}</h2>
-            <h4 class="job-company">{{job.company}}</h4>
-            <h4 class="job-duration">{{job.duration}}</h4>
-            <ul>
-                <li class="bullet" *ngFor="let jobD of job.description">{{jobD}}</li>
-            </ul>
-            <!-- <p>{{job.description}}</p> -->
+<section class="job" id="_job">
+    <div *ngIf="jobExists" class="container text-left">
+        <div class="job-box">
+            <p class="title-text">{{job.name}}</p>
+            <img class="job-img" [src]="job.picture" [alt]="job.name">
+            <div class="job-text">
+                <h2 class="job-name">{{job.jobName}}</h2>
+                <h4 class="job-company">{{job.company}}</h4>
+                <h4 class="job-duration">{{job.duration}}</h4>
+                <ul>
+                    <li class="bullet" *ngFor="let jobD of job.description">{{jobD}}</li>
+                </ul>
+                <!-- <p>{{job.description}}</p> -->
+            </div>
         </div>
     </div>
-        <div *ngIf="!jobExists">
+
+    <div *ngIf="!jobExists" class="container text-left">
+        <div class="job-box">
             <h1>The job or repository you are looking for does not exist.</h1>
         </div>
-
+    </div>
 </section>

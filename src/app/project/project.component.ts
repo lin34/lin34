@@ -1,6 +1,6 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router, NavigationEnd } from '@angular/router';
 
 import { ProjectType } from '../project_type';
 import { ProjectService } from '../project.service';
@@ -17,12 +17,18 @@ export class ProjectComponent implements OnInit {
   ps = inject(ProjectService);
   projectExists: boolean = false;
 
-  constructor() {
-    const projectId = Number(this.route.snapshot.params['id']);
+  constructor(private router: Router) {
+    const projectId = String(this.route.snapshot.params['id']);
     this.project = this.ps.getProjectById(projectId);
   }
 
   ngOnInit() {
+    this.router.events.subscribe((evt) => {
+      if (!(evt instanceof NavigationEnd)) {
+        return;
+      }
+      window.scrollTo(0, 0);
+    });
     if (this.project == undefined) {
       this.projectExists = false;
     } else {

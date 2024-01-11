@@ -3,7 +3,7 @@ scrolling solution. use javascript to scroll to an element, and add a link varia
 -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" data-spy="affix" data-offset-top="0">
     <div class="container">
-        <a class="navbar-brand" href="#"><img src="assets/imgs/michael-logo-zip-file/svg/transparent.svg" alt=""></a>
+        <a class="navbar-brand" [routerLink]="['/']"><img src="assets/imgs/michael-logo-zip-file/svg/transparent.svg" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -14,16 +14,16 @@ scrolling solution. use javascript to scroll to an element, and add a link varia
                     <a class="nav-link" [routerLink]="['/']">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href={{aboutUrl}}>About</a>
+                    <a class="nav-link" [routerLink]="['/']" fragment="about">About</a>
                 </li>                
                 <li class="nav-item">
-                    <a class="nav-link" href={{projectsUrl}}>Projects</a>
+                    <a class="nav-link" [routerLink]="['/']" fragment="projects">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{workExperienceUrl}}">Work Experience</a>
+                    <a class="nav-link" [routerLink]="['/']" fragment="workexperience">Work Experience</a>
                 </li>
                 <li class="nav-item">
-                    <a class="- btn btn-primary rounded ml-4">Contact</a>
+                    <a href="assets\pdfs\Michael_Lin_Resume.pdf" target="_blank"><button class="btn btn-dark rounded">RESUME</button></a>
                 </li>
             </ul>
         </div>
@@ -43,7 +43,6 @@ scrolling solution. use javascript to scroll to an element, and add a link varia
                 <a class="social-item" href="https://www.linkedin.com/in/lin34/"><i class="ti-linkedin"></i></a>
                 <a class="social-item" href="mailto:michael.jlin7@gmail.com"><i class="ti-email"></i></a>
                 <a class="social-item" href="https://github.com/lin34/"><i class="ti-github"></i></a>
-                <a class="social-item" href="javascript:void(0)"><i class="ti-stack-overflow"></i></a>
             </div>
         </div>
     </div>
