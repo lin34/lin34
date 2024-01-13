@@ -5,6 +5,6 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './knowledge.component.html',
-  styleUrl: './knowledge.component.css',
+  styleUrl: './knowledge.component.scss',
 })
 export class KnowledgeComponent {}
