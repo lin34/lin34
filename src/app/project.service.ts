@@ -6,6 +6,19 @@ import { ProjectType } from './project_type';
 export class ProjectService {
   public myProjects: ProjectType[] = [
     {
+      id: 'electricwheelchairaddon',
+      name: 'Electric Curb Climbing Wheelchair',
+      lang: 'C, arduino, Solidworks, 3D-printing',
+      shortDescription:
+        'A cost effective wheel-chair add-on that enables users to pop a wheelie to climb side walk curbs.',
+      longDescription: `A cost effective wheel-chair add-on that enables users to pop a wheelie to climb side walk curbs.`,
+      link: 'https://github.com/lin34/AutoWheelie',
+      picture: [
+        '../../assets/imgs/project_imgs/autowheelie1.png',
+        '../../assets/imgs/project_imgs/autowheelie2.png',
+      ],
+    },
+    {
       id: 'pathfindingvisualizer',
       name: 'Path Finding Visualizer',
       lang: 'Python, pygame',
@@ -13,7 +26,7 @@ export class ProjectService {
         'A pathfinding visualizer using BFS, DFS and A* algorithms.',
       longDescription: `Visualizer tool built in Python which solves the shortest path between two nodes in a 25x25 maze.`,
       link: 'https://github.com/lin34/PathfindingVisualizer',
-      picture: '../../assets/imgs/project_imgs/ex_astar.PNG',
+      picture: ['../../assets/imgs/project_imgs/ex_astar.PNG'],
     },
     {
       id: 'bicepcurlcounter',
@@ -27,7 +40,7 @@ export class ProjectService {
           it is in the down position, however when it reaches < 30 degrees, it is in the up position.
           When the arm transitions between these two stages, the counter is incremented.`,
       link: 'https://github.com/lin34/BicepCurlCounter',
-      picture: '../../assets/imgs/project_imgs/bicep_curl_counter.PNG',
+      picture: ['../../assets/imgs/project_imgs/bicep_curl_counter.PNG'],
     },
     {
       id: 'compiler',
@@ -39,7 +52,7 @@ export class ProjectService {
           Java environment plugins. Overall learned a lot about writing well structured and robust code
           using OOP and unit tests.`,
       link: 'project/noRepository',
-      picture: '../../assets/imgs/project_imgs/compiler.PNG',
+      picture: ['../../assets/imgs/project_imgs/compiler.PNG'],
     },
     {
       id: 'crypto_predictor',
@@ -61,7 +74,7 @@ export class ProjectService {
           The model has 2 LSTM layers and 2 densely connected layers.
           The graph shows the predicted price (yellow) compared to the real price(red). `,
       link: 'https://github.com/lin34/cryptoPredictor',
-      picture: '../../assets/imgs/project_imgs/crypto_predictor.png',
+      picture: ['../../assets/imgs/project_imgs/crypto_predictor.png'],
     },
     {
       id: 'wifismartthermostat',
@@ -73,7 +86,7 @@ export class ProjectService {
                             server to handle http requests. I also made a Flask web app connected that can be accessed through 
                             any device on the same network via the host IP address.`,
       link: 'https://github.com/lin34/wifi_smart_thermostat',
-      picture: '../../assets/imgs/project_imgs/wifi_therm_with_display.jpg',
+      picture: ['../../assets/imgs/project_imgs/wifi_therm_with_display.jpg'],
     },
     {
       id: 'pidcontroller',
@@ -84,7 +97,7 @@ export class ProjectService {
       longDescription: `Designed an accurate motion controller for a rack and pinion driven cart. 
           Engineered and tuned lead, lag and notch filters with MATLAB Simulink.`,
       link: '../assets/pdfs/MTE360_Project_4_submission.pdf',
-      picture: '../../assets/imgs/project_imgs/mte360_PID.PNG',
+      picture: ['../../assets/imgs/project_imgs/mte360_PID.PNG'],
     },
     {
       id: 'obstaclecourserobot',
@@ -95,7 +108,7 @@ export class ProjectService {
       longDescription:
         'A robot with custom signal processing circuits for encoders and magnetic sensors designed to navigate a track',
       link: 'https://devpost.com/software/obstacle-course-robot-zrg1y4',
-      picture: '../../assets/imgs/project_imgs/line_follow.jpg',
+      picture: ['../../assets/imgs/project_imgs/line_follow.jpg'],
     },
   ];
   getAllProjects(): ProjectType[] {

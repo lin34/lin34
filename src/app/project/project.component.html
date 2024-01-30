@@ -4,8 +4,9 @@
             <div class="row">
                 <h6 class="section-title mb-4">{{project?.name}}</h6>
             </div>
+
             <div class="row">
-                <img class="project-img" [src]="project?.picture" [alt]="project?.name">
+                <img *ngFor="let p of project?.picture" class="project-img" [src]="p" [alt]="project?.name">
             </div>
             <div class="row">
                 <p><b>Skills: </b>{{project?.lang}}</p>
@@ -22,6 +23,10 @@
 
 
     <div *ngIf="!projectExists">
-        <h1>The project or repository you are looking for does not exist.</h1>
+        <div class="container">
+            <div class="project-box">
+                <h1>The project or repository you are looking for does not exist.</h1>
+            </div>
+        </div>
     </div>
 </section>

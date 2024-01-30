@@ -5,5 +5,5 @@ export interface ProjectType {
   shortDescription: string;
   longDescription: string;
   link: string; //e.g. github link
-  picture: string; //path to picture
+  picture: string[]; //path to picture
 }
