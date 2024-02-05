@@ -7,7 +7,7 @@ export class JobData {
       jobUrl: 'AMD',
       jobName: 'Firmware Engineer II',
       company: 'Advanced Micro Devices',
-      duration: 'Sep 2022 to Sep 2023',
+      duration: 'Sep 2022 to Jan 2024',
       description: [
         'Developed and maintained high performance stress tests across AMD product lines including CPU, GPU and APU',
         'Led the design and validation of a critical test suite to prove reliability for MI300, a generative AI server chip',
